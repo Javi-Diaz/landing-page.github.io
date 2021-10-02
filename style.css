@@ -1,0 +1,135 @@
+/* GENERAL */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: "open sans", sans-serif;
+}
+
+/* FONDO */
+body{
+	height: 100vh;
+	background: url("images/contact.jpg") no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* CONTENIDO GENERAL */
+.contact-page{
+	width: 100%;
+	max-width: 1400px;
+	padding: 50px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* LADO IZQUIERDO Y DERECHO */
+
+.contact-page h1{
+	width: 100%;
+	margin-bottom: 80px; 
+	text-transform: uppercase;
+	color: #322;
+	font-size: 60px;
+
+}
+
+.contact-info, .contact-form{
+	flex: 1;
+}
+
+
+.item{
+	margin-bottom: 24px;
+	font-size: 16px;
+	color: #322;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+
+}
+
+.icon{
+	width: 60px;
+	height: 60px;
+	background-color: #3494db;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	margin-right: 16px;
+	align-items: center;
+	padding-top:20px ;
+	font-size: 18px;
+}
+
+.textb{
+	width: calc(50% - 10px);
+	height: 50px;
+	padding: 12px;
+	background-color: #222;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+textarea{
+	width: 100%;
+	min-height: 200px;
+	max-height: 400px;
+	resize: vertical;
+	padding: 12px;
+	background-color: #222;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.btn{
+	width: 100px;
+	height: 40px;
+	margin-left: calc(100% - 100px);
+	background-color: #3494db;	
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid #3494db;
+	transition: .3s linear;	
+}
+
+.btn:hover{
+	background-color: transparent;
+	color: #3494db;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 980px){
+	.contact-page{
+		max-width: 800px;
+	}
+
+	.contact-page h1{
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+
+	.contact-info, .contact-form{
+		flex: 100%;
+		margin-bottom: 30px;
+	}
+
+	.textb{
+		width: 100%;
+	}
+
+	body{
+		height: 100%;
+		
+	}
+}
